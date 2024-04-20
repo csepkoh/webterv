@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+body{
+    background-color: #FFCDC2;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+nav{
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    background: #fff;
+}
+nav .fejlec{
+    position: relative;
+    max-width: 1300px;
+    padding: 0px 30px;
+    height: 70px;
+    line-height: 70px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.fejlec .logo a{
+    color: #090909;
+    font-size: 30px;
+    font-weight: 600;
+    text-decoration: none;
+}
+.fejlec .menupont{
+    display: inline-flex;
+}
+.menupont li{
+    list-style: none;
+}
+.menupont li a{
+    color: #fc5f5f;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 9px 15px;
+    border-radius: 5px;
+    transition: all 0.2s ease-in;
+}
+.menupont li a:hover{
+    background: #fce0e0;
+}
+.menupont{
+    display: none;
+}
+.menupont .lenyilo{
+    position: absolute;
+    background: #fdc5c5;
+    width: 180px;
+    line-height: 45px;
+    top: 85px;
+    opacity: 0;
+    visibility: hidden;
+    box-shadow: 0 6px 10px rgb(63, 51, 51);
+}
+.menupont li:hover .lenyilo{
+    transition: all 0.3s ease;
+    top: 70px;
+    opacity: 1;
+    visibility: visible;
+}
+.lenyilo li a{
+    width: 100%;
+    display: block;
+    padding: 0 0 0 15px;
+    font-weight: 400;
+    border-radius: 0px;
+}
+.fejlec{
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+.fejlec .btn.close-btn{
+    position: absolute;
+    right: 30px;
+    top: 10px;
+}
+@media screen and (max-width: 970px) {
+    .fejlec{
+        display: block;
+    }
+    .fejlec .menupont{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        max-width: 350px;
+        top: 0;
+        left: -100%;
+        background: #ff9b9b;
+        display: block;
+        padding: 50px 10px;
+        line-height: 50px;
+        overflow-y: auto;
+        box-shadow: 0px 15px 15px rgb(255, 155, 155);
+        transition: all 0.3s ease;
+    }
+    .menupont li{
+        margin: 15px 10px;
+    }
+    .menupont li a{
+        padding: 0 20px;
+        display: block;
+        font-size: 20px;
+    }
+    .menupont .lenyilo{
+        position: static;
+        opacity: 1;
+        top: 65px;
+        visibility: visible;
+        padding-left: 20px;
+        width: 100%;
+        max-height: 0px;
+        overflow: hidden;
+        box-shadow: none;
+        transition: all 0.3s ease;
+    }
+    #showDrop:checked ~ .lenyilo{
+        max-height: 100%;
+    }
+    .menupont .lenyilomenu{
+        display: none;
+    }
+    .menupont{
+        display: block;
+        color: #f2f2f2;
+        font-size: 20px;
+        font-weight: 500;
+        padding-left: 20px;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+    }
+    .menupont {
+        background: #ff9b9b;
+    }
+    .lenyilo li{
+        margin: 0;
+    }
+    .lenyilo li a{
+        border-radius: 5px;
+        font-size: 18px;
+    }
+}
+.lap1{
+    position: absolute;
+    width: 95%;
+    background-color: #fff;
+    padding: 10px;
+    border: 2px solid rgba(255,255,255,.2);
+    border-radius: 15px;
+    margin-top: 100px;
+    margin-left: 2.5%;
+}
+#focim{
+    text-align: center;
+    font-size: 64px;
+}
+#elsoszoveg{
+    float: left;
+    width: 80%;
+    text-align: right;
+    height: 200px;
+    position: relative;
+}
+#elsoszoveg1{
+    position: absolute;
+    top: 50%;
+    transform: translate(0%, -50%);
+}
+#elsokep img{
+    width: 20%;
+    height: 200px;
+}
+#masodikkep img{
+    float: left;
+    width: 20%;
+    height: 200px;
+}
+#masodikszoveg{
+    width: 80%;
+    height: 200px;
+    position: relative;
+    text-align: left;
+}
+#masodikszoveg2{
+    position: absolute;
+    top: 50%;
+    margin-left: 25%;
+    transform: translate(0%, -50%);
+}
+#vasarloszoveg{
+    text-align: center;
+    font-size: 32px;
+}
+.vissznev{
+    font-weight: bold;
+}
+#focimalatt{
+    text-align: center;
+}
+.kezdolapkep{
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}

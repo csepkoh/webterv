@@ -1,0 +1,79 @@
+
+.h3{
+    text-align: left;
+    letter-spacing: -2px;
+    text-underline-color: #fc5f5f ;top: 50%;
+}
+
+
+.profil{
+    width:30%;
+    float: left;
+    display:inline-block;
+}
+
+.kedvencekkosar{
+    width:33%;
+}
+
+
+.elmenyek{
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    text-align: center;
+    background-color: #FFDED7;
+}
+.elmenyek .cellak{
+    max-width: 300px;
+}
+.ar{
+    color: grey;
+    font-size: 22px;
+}
+.elmenyek .gomb  {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #BFE699;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+}
+.elmenyek .gomb:hover{
+    background-color: white;
+    color: #BFE699;
+}
+
+
+.elmenyekkep{
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+
+.h4{
+    font-size: 40px;
+    text-align: left;
+    text-decoration-line: underline;
+    text-decoration-color: black;
+    padding-top: 50px;
+    padding-bottom: 30px;
+
+}
+
+.tablazat{
+    width: 80%;
+
+}
+
+
+.cellak {
+    padding-top: 20px;
+    padding-bottom: 900px;
+    padding-left: 20px;
+    padding-right: 20px;
+}

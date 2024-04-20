@@ -1,0 +1,43 @@
+#editor {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+}
+
+.edit-toggle {
+    background-color: #BFE699; /* Zöld háttérszín */
+    color: white; /* Fehér szövegszín */
+    padding: 10px 20px; /* Külső tér minden oldalon */
+    border: none; /* Keret nélkül */
+    border-radius: 5px; /* Kerekített szélek */
+    cursor: pointer; /* Mutató kurzor a felhasználói visszajelzéshez */
+}
+
+
+#editor input {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#editor button {
+    width: auto;
+}
+
+#editToggle:checked ~ #editor {
+    display: block;
+}
+#savebutton {
+    background-color: #BFE699; /* Zöld háttérszín */
+    color: white; /* Fehér szövegszín */
+    padding: 10px 20px; /* Külső tér minden oldalon */
+    border: none; /* Keret nélkül */
+    border-radius: 5px; /* Kerekített szélek */
+    cursor: pointer;
+}

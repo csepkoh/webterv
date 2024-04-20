@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('/webterv/img/bejelentkezohatter.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.lap{
+    width: 420px;
+    background: transparent;
+    border: 2px solid rgba(255,255,255,.2);
+    backdrop-filter: blur(40px);
+    color: #fff;
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+
+.lap h1{
+    font-size: 36px;
+    text-align: center;
+}
+
+.lap .mezo{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.mezo input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    outline: none;
+    border: 2px solid rgba(255,255,255,.2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+
+}
+
+.mezo select {
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+    background: transparent;
+    color: #fff;
+    font-size: 16px;
+    border: 2px solid rgba(255,255,255,.2);
+
+}
+
+.mezo select:hover{
+    background: #bebebe;
+}
+
+.mezo input::placeholder {
+    position: absolute;
+    color: #fff;
+}
+
+.mezo i {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.lap .gomb{
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+}
+.lap .regisztracio{
+    font-size: 14.5px;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.regisztracio p a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.regisztracio p a:hover{
+    text-decoration: underline;
+}

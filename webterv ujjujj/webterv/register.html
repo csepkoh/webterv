@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Élmények - Regisztráció</title>
+  <link rel="stylesheet" href="css/bejelentkezo.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+<div class="lap">
+    <h1>Regisztráció</h1>
+    <div class="mezo">
+      <input type="text" id="nev" name="nev" placeholder="Név" maxlength="30" required>
+      <i class='bx bxs-user' ></i>
+    </div>
+    <div class="mezo">
+      <input type="text" id="felhasznalo" name ="felhasznalo" placeholder="Felhasználónév" maxlength="6" required>
+      <i class='bx bxs-user' ></i>
+    </div>
+    <div class="mezo">
+      <input type="text" id="email" name ="email" placeholder="Email cím" maxlength="32" required>
+      <i class='bx bxs-user' ></i>
+    </div>
+  <div class="mezo">
+    <input type="text" id="lakcim" name="lakcim" placeholder="Lakcím: ir.szám, város, utca, házszám" maxlength="70" required>
+    <i class='bx bxs-user' ></i>
+  </div>
+    <div class="mezo">
+      <input type="password" id="jelszo" name="jelszo" placeholder="Jelszó" maxlength="32" required>
+      <i class='bx bxs-lock' ></i>
+    </div>
+    <div class="mezo">
+      <input type="password" id="jelszo_ujra" name="jelszo_ujra" placeholder="Jelszó újra" required>
+      <i class='bx bxs-lock' ></i>
+    </div>
+    <button type="submit" class="gomb">Regisztráció</button>
+    <div class="regisztracio">
+      <p>Regisztrált felhasználó vagy? <a href="login.html">Jelentkezz be</a></p>
+      <p><a href="index.html">Kezdőlap</a></p>
+
+    </div>
+  </form>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Élmények - Profil</title>
+    <link rel="stylesheet" href="css/formazas.css">
+    <link rel="stylesheet" href="css/asd.css">
+    <link rel="stylesheet" href="css/profiladatmodositas.css">
+
+</head>
+<body>
+<nav>
+    <div class="fejlec">
+        <div class="logo"><a href="index.html">Élmények</a></div>
+        <ul class="menupont">
+            <li><a href="elmenyeklistaja.html">Élmények listája</a></li>
+            <li><a href="#">Adj hozzá élményt!</a></li>
+            <li><a href="profil.html">Profilom</a></li>
+            <li>
+                <a href="#" class="lenyilomenu">Menü</a>
+                <ul class="lenyilo">
+                    <li><a href="login.html">Bejelentkezés</a></li>
+                    <li><a href="register.html">Regisztráció</a></li>
+                    <li><a href="kosar.html">Kosár tartalma</a></li>
+                    <li><a href="admin.html">Admin felület</a></li>
+                    <li><a href="#">Kijelentkezés</a></li>
+                </ul>
+            </li>
+            <li><a href="login.html">Bejelentkezés/Regisztráció</a></li>
+        </ul>
+    </div>
+</nav>
+<div class="lap1" id="profilhatter">
+    <p>
+    <div class="profil">
+        <h4  >Profilom</h4>
+        <img class="elmenyekkep" style="border-radius: 25px;" src="img/profil2.jpg">
+    <form action="profil.php" method="post" enctype="multipart/form-data">
+        <input type="file" name="profile_image" accept="image/*">
+        <button type="submit" id="savebutton">Profilkép feltöltése</button>
+    </form>
+
+    <p> <h4>Név: </h4> Csík János</p>
+    <p> <h4>Email cím: </h4>szep.tavasz@gmail.com</p>
+    <p> <h4>Számlázási/szállítási cím: </h4>1234, Disneyland, Monitor utca 3248.</p>
+    <br>
+
+
+    <label for="editToggle" class="edit-toggle">Szerkesztés</label>
+    <input type="checkbox" id="editToggle" class="hidden">
+    <div id="editor" class="hidden">
+        <form action="profil.php" method="post">
+            <p><h4>Profil adatok szerkesztése:</h4></p>
+            <input type="text" name="name" placeholder="Név">
+            <input type="email" name="email" placeholder="E-mail cím">
+            <input type="text" name="address" placeholder="Szállítási cím">
+            <button type="submit" id="savebutton">Mentés</button>
+        </form>
+    </div>
+
+
+
+
+
+</div>
+    </p>
+    <div class="profil">
+        <div>
+            <p class="h4">Kedvencek</p>
+            <p>
+            <table class="tablazat ">
+
+                <tr class="cellak">
+                    <td>
+                        <div class="elmenyek">
+
+                            <img class="elmenyekkep" src="img/lovaglas.jpg" alt="lovaglás" style="width:100%">
+                            <h1>Gyerek sétalovaglás</h1>
+                            <p class="ar">6000 FT</p>
+                            <p>Sétalovaglás Szentendrén 3-8 éves korig gyerekeknek. A program egy fél órás vezetett száras sétát tartalmaz lóháton</p>
+                            <p><button class="gomb">Kosárba</button></p>
+                            <p><button class="gomb">Kedvencekbe</button></p>
+                            </div>
+                    </td>
+                </tr>
+        </table>
+            </p>
+
+        </div>
+
+
+        <div>
+             <p class="h4">Korábbi rendelések</p>
+            <p>
+            <table class="tablazat ">
+
+                <tr class="cellak">
+                    <td>
+                        <div class="elmenyek">
+
+                            <img class="elmenyekkep" src="img/lezerharc.jpg" alt="lovaglás" style="width:100%">
+                            <h1>Lézerharc</h1>
+                            <p class="ar">32.000 FT</p>
+                            <p>Lézer harc 12 fős társaságnak, ahol egymás ellen tudtok harcolni 2 csapatban. Nagyon izgalmas, ha ki akarjátok probálni élőben
+                                az online játékokban látottakat. Emellett jó csapatépítő program,de kisgyerekekkel is egy remek kikapcsolódás </p>
+                            <p><button class="gomb">Kosárba</button></p>
+                            <p><button class="gomb">Kedvencekbe</button></p>
+                            </div>
+
+
+                    </td>
+
+                </tr>
+
+        </table>
+            </p>
+
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
